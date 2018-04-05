@@ -17,27 +17,20 @@ How to use it:
 Run docker-tippecanoe with docker run, mounting a local directory or use Docker volumes as needed with -v. 
 
 ```
-$ tippecanoe -o file.mbtiles [options] [file.json file.geobuf ...]
+tippecanoe -o file.mbtiles [options] [file.json file.geobuf ...]
+
+docker run --rm -v `pwd`/data_tiles:/data_tiles ingmapping/tippecanoe  -o out.mbtiles [and other tippecanoe commands]
+
+docker run --rm -v `pwd`/data_tiles:/data_tiles ingmapping/tippecanoe  -o data_tiles/test.mbtiles /data_tiles/test.geojson 
+
 ```
 If no files are specified, it reads GeoJSON from the standard input. If multiple files are specified, each is placed in its own layer.
-
-The GeoJSON features need not be wrapped in a FeatureCollection. You can concatenate multiple GeoJSON features or files together, and it will parse out the features and ignore whatever other objects it encounters.
 
 To run the tippecanoe help :
 
 ```
 docker run --rm ingmapping/tippecanoe --help
 ```
-
-To run tippecanoe with options:
-
-```
-docker run --rm -v `pwd`/data_tiles:/data_tiles ingmapping/tippecanoe  -o out.mbtiles [and other tippecanoe commands]
-
-docker run --rm -v `pwd`/data_tiles:/data_tiles ingmapping/tippecanoe  -o data_tiles/test.mbtiles /data_tiles/test.geojson 
-
-```
-
 For more information, please read the Tippecanoe documentation.
 
 # Making your own vector tiles with TippeCanoe
