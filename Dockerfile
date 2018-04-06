@@ -22,4 +22,4 @@ RUN git clone https://github.com/mapbox/tippecanoe.git tippecanoe \
 
 # Run the default command to show usage
 
-ENTRYPOINT ["tippecanoe --help"]
+ENTRYPOINT ["tippecanoe"]
