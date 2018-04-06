@@ -14,7 +14,7 @@ docker build -t ingmapping/tippecanoe
 ``` 
 How to use it:
 
-Run docker-tippecanoe with docker run, mounting a local directory or use Docker volumes as needed with -v. See examples:
+Run docker-tippecanoe with docker run, mounting a local directory or use Docker volumes as needed with -v. See example:
 
 ```
 docker run --rm -v `pwd`:/data_tiles ingmapping/tippecanoe  -o data_tiles/test.mbtiles /data_tiles/example.geojson 
