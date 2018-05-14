@@ -54,7 +54,7 @@ For more information, please read the Tippecanoe documentation: https://github.c
 
 # Get tiles from OSM
 
-Another way of getting vector tiles, without having your own data is from OpenStreetMap. 
+Another way of getting vector tiles, without having your own data is from OpenMapTiles. 
 
 Have a look at: https://openmaptiles.org/ (Former project name: <a href="https://openmaptiles.org/osm2vectortiles/">OSM2VectorTiles</a>). OpenMapTiles.org is an open-source project from <a href="https://www.klokantech.com/">Klokan Technologies GmbH</a>  and <a href="https://github.com/openmaptiles">OSM community</a>. The project turns the publicly available OpenStreetMap data into ready-to-use packages containing vector tiles for the whole planet, individual countries and major cities.
 
